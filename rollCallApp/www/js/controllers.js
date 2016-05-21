@@ -49,7 +49,7 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     $scope.courses = Courses;
     $scope.addCourses = function() {
       var courseName = document.getElementById("courseName").value;
-      var day = document.getElementById("courseDay").value;
+      var day = document.getElementById("day").value;
       var courseTime = document.getElementById("courseTime").value;
       if (courseName) {
         $scope.courses.$add({
@@ -63,7 +63,7 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     $scope.addcourses = function() {
       state.go('tabs.createCourse');
     };
-    $scope.gocourses = function(courses) {
+    $scope.goCourses = function(courses) {
       var course = courses;
       if (course == 'Creative Multimedia') {
         state.go('tabs.cmm');
