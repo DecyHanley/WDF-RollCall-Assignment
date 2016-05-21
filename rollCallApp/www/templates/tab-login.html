@@ -19,7 +19,7 @@
         <div class="col-80 col-offset-10">
           <label class="item item-input">
             <span class="input-label">Username</span>
-            <input type="text">
+            <input type="email" id="username">
           </label>
         </div>
       </div>
@@ -27,14 +27,18 @@
         <div class="col-80 col-offset-10">
           <label class="item item-input">
             <span class="input-label">Password</span>
-            <input type="password">
+            <input type="password" id="password">
           </label>
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col-50 col-offset-25">
-          <button class="button button-full button-positive" type="submit">Sign In</button>
+          <a href="#/tab/courses">
+            <button class="button button-full button-positive" type="submit" ng-click="addItem()" >
+              Sign In
+            </button>
+          </a>
         </div>
       </div>
     </section>
@@ -43,7 +47,7 @@
       <div class="row">
         <div class="col-50 col-offset-25">
           <a href="#/tab/register">
-            <button class="button button-small button-royal">
+            <button class="button button-small button-royal" type="submit">
               Register
             </button>
           </a>

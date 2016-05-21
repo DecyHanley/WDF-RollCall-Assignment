@@ -1,11 +1,4 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('rollcallapp', ['ionic', 'rollcallapp.controllers', 'rollcallapp.services', 'firebase'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -29,6 +22,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
+
   $stateProvider
 
   // setup an abstract state for the tabs directive
@@ -45,7 +39,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-login': {
         templateUrl: 'templates/tab-login.html',
-        controller: 'LoginCtrl'
+        controller: 'loginCtrl'
       }
     }
   })
@@ -55,32 +49,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-login': {
         templateUrl: 'templates/tab-register.html',
-        controller: 'RegisterCtrl'
+        controller: 'registerCtrl'
       }
     }
   })
 
-  .state('tabs.students', {
-    url: '/students',
+  .state('tabs.courses', {
+    url: '/coursess',
     views: {
-      'tab-students': {
-        templateUrl: 'templates/tab-students.html',
-        controller: 'StudentsCtrl'
-      }
-    }
-  })
-
-  .state('tabs.student-detail', {
-    url: '/students/:studentId',
-    views: {
-      'tab-students': {
-        templateUrl: 'templates/student-detail.html',
-        controller: 'StudentDetailCtrl'
+      'tab-courses': {
+        templateUrl: 'templates/tab-courses.html',
+        controller: 'coursesCtrl'
       }
     }
   })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/login');
-
 });
