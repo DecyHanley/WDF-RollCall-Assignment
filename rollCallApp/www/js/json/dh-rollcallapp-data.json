@@ -2,41 +2,38 @@
   "items" : {
     "courses" : {
       "-KGVhVdWooftIoaMQ4-2" : {
-        "courseName" : "Creative Multimedia",
-        "courseDay" : "Monday",
+        "courseName" : "Creative Mutimedia",
+        "day" : "Monday",
         "courseTime" : "12:00"
       },
       "-KGVhxczss2EHC9vX5Ph" : {
         "courseName" : "Digital Animation Production",
-        "courseDay" : "Tuesday",
+        "day" : "Tuesday",
         "courseTime" : "13:00"
       },
       "-KGVi4F_qRP7EvMqfYxb" : {
         "courseName" : "Game Art and Design",
-        "courseDay" : "Wednesday",
+        "day" : "Wednesday",
         "courseTime" : "14:00"
       },
       "-KHyl6gp_hmdEMuZd3dk" : {
         "courseName" : "Business Studies",
-        "courseDay" : "Thursday",
+        "day" : "Thursday",
         "courseTime" : "15:00"
       }
     },
     "students" : {
       "-KGVfovARyTxu2G5DM84" : {
-        "studName" : "Decy Hanley",
-        "studCourse" : "Creative Multimedia",
-        "studModule" : "Web Dev FrameWorks"
+        "stuCourse" : "Creative Mutimedia",
+        "stuName" : "Thomas Lonergan"
       },
       "-KGVgwdTqbbQq0TI_tWX" : {
-        "studName" : "Thomas Lonergan",
-        "studCourse" : "Creative Multimedia",
-        "studModule" : "Venture Management"
+        "stuCourse" : "Creative Mutimedia",
+        "stuName" : "Emily Kearns"
       },
       "-KHylF1sQN5eLVECIcPg" : {
-        "studName" : "John Hannafin",
-        "studCourse" : "Digital Animation Production",
-        "studModule" : "Emerging Technologies"
+        "stuCourse" : "Game Art and Design",
+        "stuName" : "John Hannafin"
       }
     }
   }

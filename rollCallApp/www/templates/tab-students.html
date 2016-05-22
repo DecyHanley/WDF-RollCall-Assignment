@@ -1,0 +1,11 @@
+<ion-view view-title="Students">
+  <ion-content>
+    <ion-list ng-repeat="student in students">
+      <a ng-click="goStudents(students.studName)">
+        <span data={{students.studName}}> {{students.studName}}</span>
+        <span data={{students.studCourse}}> {{students.studCourse}}</span>
+        <span data={{students.studModule}}> {{students.studModule}}</span>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

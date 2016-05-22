@@ -57,9 +57,19 @@ angular.module('rollcallapp', ['ionic', 'rollcallapp.controllers', 'rollcallapp.
   .state('tabs.courses', {
     url: '/courses',
     views: {
-      'tab-courses': {
+      'tab-login': {
         templateUrl: 'templates/tab-courses.html',
         controller: 'coursesCtrl'
+      }
+    }
+  })
+
+  .state('tabs.students', {
+    url: '/students',
+    views: {
+      'tab-login': {
+        templateUrl: 'templates/tab-students.html',
+        controller: 'studentsCtrl'
       }
     }
   })
