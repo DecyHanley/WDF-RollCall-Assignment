@@ -87,19 +87,16 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
   };*/
 })
 
-
 .controller("studentsCtrl", function($scope, $state, Students) {
   $scope.students = Students;
   $scope.addStudnets = function() {
     var studName = document.getElementById("studName").value;
     var studCourse = document.getElementById("studCourse").value;
-    var studModule = document.getElementById("studModule").value;
 
     if (studName) {
       $scope.students.$add({
         "studName": studName,
-        "studCourse": studCourse,
-        "studModule": studModule
+        "studCourse": studCourse
       });
     }
     $state.go('tabs.students');

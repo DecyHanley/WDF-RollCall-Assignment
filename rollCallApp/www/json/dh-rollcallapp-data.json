@@ -25,18 +25,15 @@
     "students" : {
       "-KGVfovARyTxu2G5DM84" : {
         "studName" : "Decy Hanley",
-        "studCourse" : "Creative Multimedia",
-        "studModule" : "Web Dev FrameWorks"
+        "studCourse" : "Creative Multimedia"
       },
       "-KGVgwdTqbbQq0TI_tWX" : {
         "studName" : "Thomas Lonergan",
-        "studCourse" : "Creative Multimedia",
-        "studModule" : "Venture Management"
+        "studCourse" : "Creative Multimedia"
       },
       "-KHylF1sQN5eLVECIcPg" : {
         "studName" : "John Hannafin",
-        "studCourse" : "Digital Animation Production",
-        "studModule" : "Emerging Technologies"
+        "studCourse" : "Digital Animation Production"
       }
     }
   }
