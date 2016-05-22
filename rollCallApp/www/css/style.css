@@ -2,3 +2,23 @@ html, body {
   text-align: center;
   vertical-align: middle;
 }
+.header-buttons-logout {
+  left: 1%;
+}
+.header-buttons-course {
+  left: 90%;
+}
+.header-buttons-student {
+  left: 92%;
+}
+@media (max-width: 768px) {
+  .header-buttons-logout {
+  left: 1%;
+  }
+  .header-buttons-course {
+    left: 68%;
+  }
+  .header-buttons-student {
+    left: 72%;
+  }
+}

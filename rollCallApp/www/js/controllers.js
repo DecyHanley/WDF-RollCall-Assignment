@@ -1,10 +1,13 @@
 angular.module('rollcallapp.controllers', ["ionic", "firebase"])
-.controller("loginCtrl", function($scope, $state, Items) {
+.controller("loginCtrl", function($scope, $state, $ionicHistory, Items) {
   var ref = new Firebase("https://dh-rollcallapp.firebaseio.com");
   $scope.items = Items;
   $scope.logout = function() {
     ref.unauth();
     $state.go('tabs.login');
+    $ionicHistory.clearHistory();
+    $ionicHistory.clearCache();
+    $ionicHistory.nextViewOptions({ disableBack: true, historyRoot: true });
   };
   $scope.addItem = function() {
     var email = document.getElementById("email").value;
@@ -61,28 +64,16 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     ref.remove();
     alert("Code Commented out deletes everything not just one thing");
   };*/
-  $scope.addCourses = function() {
+  $scope.createCourse = function() {
     state.go('tabs.createCourse');
   };
-  /*$scope.goCourses = function(courses) {
-    var course = courses;
-    if (course == 'Creative Multimedia') {
-      state.go('tabs.cmm');
-    }
-    if (course == 'Digital Animation Production') {
-      state.go('tabs.dap');
-    }
-    if (course == 'Game Art and Design') {
-      state.go('tabs.gad');
-    }
-    if (course == 'Business Studies') {
-      state.go('tabs.bs');
-    }
-  };*/
+  $scope.goCourses = function() {
+    state.go('tabs.students');
+  };
 })
 .controller("studentsCtrl", function($scope, $state, Students) {
   $scope.students = Students;
-  $scope.addStudents = function() {
+  $scope.addStudent = function() {
     var studName = document.getElementById("studName").value;
     var studCourse = document.getElementById("studCourse").value;
     if (studName) {
@@ -99,6 +90,6 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     alert("Code Commented out deletes everything not just one thing");
   };*/
   $scope.addStudents = function() {
-    state.go('tabs.createStudent');
+    state.go('tabs.addStudent');
   };
 })
