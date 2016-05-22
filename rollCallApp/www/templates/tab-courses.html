@@ -1,11 +1,17 @@
 <ion-view view-title="Courses">
   <ion-content>
+    <div class="bar bar-header">
+      <button class="button button-clear button-positive" style="left: 22.5%;" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
+      <button class="button button-clear button-positive" style="left: 50%;">Create Course</button>
+    </div>
+    <br><br><br>
     <ion-list ng-repeat="course in courses">
-      <a ng-click="goCourses(courses.courseName)">
-        <span data={{courses.courseName}}> {{courses.courseName}}</span>
-        <span data={{courses.courseDay}}> {{courses.courseDay}}</span>
-        <span data={{courses.courseTime}}> {{courses.courseTime}}</span>
+      <a class="button icon-right ion-chevron-right button-positive" ng-click="goCourses(course.courseName)">
+        <span data={{course.courseName}}> {{course.courseName}}</span> :
+        <span data={{course.courseDay}}> {{course.courseDay}}</span> :
+        <span data={{course.courseTime}}> {{course.courseTime}}</span>
       </a>
+      <br><br>
     </ion-list>
   </ion-content>
 </ion-view>

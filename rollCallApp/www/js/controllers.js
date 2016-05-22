@@ -1,9 +1,7 @@
 angular.module('rollcallapp.controllers', ["ionic", "firebase"])
-
 .controller("loginCtrl", function($scope, $state, Items) {
   var ref = new Firebase("https://dh-rollcallapp.firebaseio.com");
   $scope.items = Items;
-
   $scope.logout = function() {
     ref.unauth();
     $state.go('tabs.login');
@@ -24,14 +22,12 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     });
   };
 })
-
 .controller("registerCtrl", function($scope, $state, Items) {
   $scope.items = Items;
   $scope.addItem = function() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var ref = new Firebase("https://dh-rollcallapp.firebaseio.com");
-
     ref.createUser({
       email: email,
       password: password
@@ -45,14 +41,12 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     });
   };
 })
-
 .controller("coursesCtrl", function($scope, $state, Courses) {
   $scope.courses = Courses;
   $scope.addCourses = function() {
     var courseName = document.getElementById("courseName").value;
     var courseDay = document.getElementById("courseDay").value;
     var courseTime = document.getElementById("courseTime").value;
-
     if (courseName) {
       $scope.courses.$add({
         "courseName": courseName,
@@ -86,13 +80,11 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     }
   };*/
 })
-
 .controller("studentsCtrl", function($scope, $state, Students) {
   $scope.students = Students;
-  $scope.addStudnets = function() {
+  $scope.addStudents = function() {
     var studName = document.getElementById("studName").value;
     var studCourse = document.getElementById("studCourse").value;
-
     if (studName) {
       $scope.students.$add({
         "studName": studName,

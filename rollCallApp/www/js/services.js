@@ -1,5 +1,4 @@
 angular.module('rollcallapp.services', [])
-
 .factory("Items", function($firebaseArray) {
   var itemsRef = new Firebase("https://dh-rollcallapp.firebaseio.com/items");
   return $firebaseArray(itemsRef);

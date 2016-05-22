@@ -1,0 +1,28 @@
+<ion-view view-title="Add Student">
+  <ion-content>
+    <div class="bar bar-header">
+      <button class="button button-clear button-positive" style="left: 42.5%;" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
+    </div>
+    <section>
+      <label class="item item-input">
+        <span class="input-label">Student Name
+      </label>
+      <input type="text" id="stuName">
+    </section>
+    <section>
+      <label class="item item-input">
+        <span class="input-label">Class</span>
+      </label>
+      <select id="stuClass">
+        <option value="Creative Mutimedia">Creative Mutimedia</option>
+        <option value="Game Art and Design">Game Art and Design</option>
+        <option value="Business">Business</option>
+      </select>
+    </section>
+    <section>
+      <ion-list ng-repeat="item in items">
+        <div id="item">{{item.stuName}} : {{item.stuClass}}</div>
+      </ion-list>
+    </section>
+</ion-content>
+</ion-view>

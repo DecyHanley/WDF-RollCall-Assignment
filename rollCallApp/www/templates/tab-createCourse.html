@@ -1,0 +1,41 @@
+<ion-view view-title="Create Course">
+  <ion-content>
+    <div class="bar bar-header">
+      <button class="button button-clear button-positive" style="left: 42.5%;" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
+    </div>
+    <section>
+      <label class="item item-input">
+        <span class="input-label">Course Name</span>
+      </label>
+      <select id="courseName">
+        <option value="Creative Mutimedia">Creative Mutimedia</option>
+        <option value="Digital Animation Production">Digital Animation Production</option>
+        <option value="Game Art and Design">Game Art and Design</option>
+        <option value="Business Studies">Business Studies</option>
+      </select>
+    </section>
+    <section>
+      <label class="item item-input">
+        <span class="input-label">Course Day</span>
+      </label>
+      <select id="courseDay">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+      </select>
+    </section>
+    <section>
+      <label class="item item-input">
+        <span class="input-label">Course Time</span>
+        <input type="time" id="courseTime">
+      </label>
+    </section>
+    <section>
+      <ion-list ng-repeat="course in courses">
+        <div id="course">{{course.courseName}} : {{course.courseDay}} : {{course.courseTime}}</div>
+      </ion-list>
+    </section>
+  </ion-content>
+</ion-view>

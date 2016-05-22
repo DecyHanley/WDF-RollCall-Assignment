@@ -1,10 +1,16 @@
 <ion-view view-title="Students">
   <ion-content>
+    <div class="bar bar-header">
+      <button class="button button-clear button-positive" style="left: 22.5%;" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
+      <button class="button button-clear button-positive" style="left: 50%;">Add Student</button>
+    </div>
+    <br><br><br>
     <ion-list ng-repeat="student in students">
-      <a ng-click="goStudents(students.studName)">
-        <span data={{students.studName}}> {{students.studName}}</span>
-        <span data={{students.studCourse}}> {{students.studCourse}}</span>
+      <a>
+        <span data={{student.studName}}> {{student.studName}}</span> :
+        <span data={{student.studCourse}}> {{student.studCourse}}</span>
       </a>
+      <br><br>
     </ion-list>
   </ion-content>
 </ion-view>
