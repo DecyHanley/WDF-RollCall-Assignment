@@ -24,6 +24,9 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
       }
     });
   };
+  $scope.goRegister = function() {
+    $state.go('tabs.register');
+  }
 })
 .controller("registerCtrl", function($scope, $state, Items) {
   $scope.items = Items;
@@ -46,7 +49,7 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
 })
 .controller("coursesCtrl", function($scope, $state, Courses) {
   $scope.courses = Courses;
-  $scope.addCourses = function() {
+  $scope.createCourse = function() {
     var courseName = document.getElementById("courseName").value;
     var courseDay = document.getElementById("courseDay").value;
     var courseTime = document.getElementById("courseTime").value;
@@ -64,11 +67,11 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     ref.remove();
     alert("Code Commented out deletes everything not just one thing");
   };*/
-  $scope.createCourse = function() {
-    state.go('tabs.createCourse');
+  $scope.goCreateCourse = function() {
+    $state.go('tabs.createCourse');
   };
-  $scope.goCourses = function() {
-    state.go('tabs.students');
+  $scope.goStudents = function() {
+    $state.go('tabs.students');
   };
 })
 .controller("studentsCtrl", function($scope, $state, Students) {
@@ -89,7 +92,7 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     ref.remove();
     alert("Code Commented out deletes everything not just one thing");
   };*/
-  $scope.addStudents = function() {
-    state.go('tabs.addStudent');
+  $scope.goAddStudent = function() {
+    $state.go('tabs.addStudent');
   };
 })

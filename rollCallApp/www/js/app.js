@@ -11,7 +11,8 @@ angular.module('rollcallapp', ['ionic', 'rollcallapp.controllers', 'rollcallapp.
     }
   });
 })
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  $ionicConfigProvider.tabs.position('bottom');
   $stateProvider
   // setup an abstract state for the tabs directive
   .state('tabs', {

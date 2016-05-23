@@ -2,7 +2,7 @@
   <ion-content>
     <div class="bar bar-header">
       <button class="button button-clear button-positive header-buttons-logout" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
-      <button class="button button-clear button-positive header-buttons-student">Add Student</button>
+      <button class="button button-clear button-positive header-buttons-student" ng-click="goAddStudent()">Add Student</button>
     </div>
     <br><br><br>
     <ion-list ng-repeat="student in students">

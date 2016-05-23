@@ -3,13 +3,19 @@ html, body {
   vertical-align: middle;
 }
 .header-buttons-logout {
-  left: 1%;
+  left: 0.5%;
 }
 .header-buttons-course {
-  left: 90%;
+  left: 91.5%;
 }
 .header-buttons-student {
-  left: 92%;
+  left: 92.5%;
+}
+.header-buttons-createCourse {
+  left: 48%;
+}
+.header-buttons-addStudent {
+  left: 48%;
 }
 @media (max-width: 768px) {
   .header-buttons-logout {
@@ -20,5 +26,11 @@ html, body {
   }
   .header-buttons-student {
     left: 72%;
+  }
+  .header-buttons-createCourse {
+    left: 42.5%;
+  }
+  .header-buttons-addStudent {
+    left: 42.5%;
   }
 }
