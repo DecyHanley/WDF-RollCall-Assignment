@@ -62,11 +62,6 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     }
     $state.go('tabs.courses');
   };
-  /*$scope.delete = function() {
-    var ref = new Firebase("https://dh-rollcallapp.firebaseio.com");
-    ref.remove();
-    alert("Code Commented out deletes everything not just one thing");
-  };*/
   $scope.goCreateCourse = function() {
     $state.go('tabs.createCourse');
   };
@@ -79,19 +74,16 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
   $scope.addStudent = function() {
     var studName = document.getElementById("studName").value;
     var studCourse = document.getElementById("studCourse").value;
+    var studChecked = document.getElementById("studChecked").value;
     if (studName) {
       $scope.students.$add({
         "studName": studName,
-        "studCourse": studCourse
+        "studCourse": studCourse,
+        "studChecked": studChecked
       });
     }
     $state.go('tabs.students');
   };
-  /*$scope.delete = function() {
-    var ref = new Firebase("https://dh-rollcallapp.firebaseio.com");
-    ref.remove();
-    alert("Code Commented out deletes everything not just one thing");
-  };*/
   $scope.goAddStudent = function() {
     $state.go('tabs.addStudent');
   };

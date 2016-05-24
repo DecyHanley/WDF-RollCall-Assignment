@@ -1,56 +1,29 @@
 <ion-view view-title="Login">
   <ion-content class="padding">
     <br>
-    <section class="title">
-      <div class="row">
-        <div class="col-80 col-offset-10">
-          <h2>Roll Call</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-80 col-offset-10">
-          <h4>Please Login to commence roll call!!!</h4>
-        </div>
-      </div>
+    <section class="page-title">
+      <h1>Roll Call</h1>
+      <h4>Please Login to commence roll call!!!</h4>
     </section>
-    <br>
+
     <section class="login">
-      <div class="row">
-        <div class="col-80 col-offset-10">
-          <label class="item item-input">
-            <span class="input-label">Email</span>
-            <input type="email" id="email">
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-80 col-offset-10">
-          <label class="item item-input">
-            <span class="input-label">Password</span>
-            <input type="password" id="password">
-          </label>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-50 col-offset-25">
-          <button class="button button-full button-positive" type="submit" ng-click="addItem()" >
-            Sign In
-          </button>
-        </div>
-      </div>
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" id="email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" id="password">
+      </label>
     </section>
-    <br>
-    <section class="register">
-      <div class="row">
-        <div class="col-50 col-offset-25">
-          <a>
-            <button class="button button-small button-royal" ng-click="goRegister()">
-              Register
-            </button>
-          </a>
-        </div>
-      </div>
+
+    <section class="sign-in-button">
+      <button class="button button-full button-positive" type="submit" ng-click="addItem()">Sign In</button>
     </section>
+
+    <section class="register-button">
+      <button class="button button-small button-royal" ng-click="goRegister()">Please Register here!!!</button>
+    </section>
+
   </ion-content>
 </ion-view>

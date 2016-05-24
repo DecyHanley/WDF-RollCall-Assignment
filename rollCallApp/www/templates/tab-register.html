@@ -1,44 +1,22 @@
 <ion-view view-title="Register">
   <ion-content class="padding">
     <br>
-    <section class="title">
-      <div class="row">
-        <div class="col-80 col-offset-10">
-          <h2>Registration</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-80 col-offset-10">
-          <h4>Please enter your details to Register</h4>
-        </div>
-      </div>
+    <section class="page-title">
+      <h1>Registration</h1>
+      <h4>Please enter your details to Register</h4>
     </section>
-    <section class="login">
-      <br>
-      <div class="row">
-        <div class="col-80 col-offset-10">
-          <label class="item item-input">
-            <span class="input-label">Email</span>
-            <input type="email" id="email">
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-80 col-offset-10">
-          <label class="item item-input">
-            <span class="input-label">Password</span>
-            <input type="password" id="password">
-          </label>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-50 col-offset-25">
-          <button class="button button-small button-royal" type="submit" ng-click="addItem()">
-            Register
-          </button>
-        </div>
-      </div>
+    <section class="register">
+      <label class="item item-input">
+        <div class="input-label">Email</div>
+        <input type="email" id="email">
+      </label>
+      <label class="item item-input">
+        <div class="input-label">Password</div>
+        <input type="password" id="password">
+      </label>
+    </section>
+    <section class="register-button">
+      <button class="button button-small button-royal" type="submit" ng-click="addItem()">Register</button>
     </section>
   </ion-content>
 </ion-view>

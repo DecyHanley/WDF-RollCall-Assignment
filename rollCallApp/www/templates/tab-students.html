@@ -1,16 +1,21 @@
 <ion-view view-title="Students">
-  <ion-content>
-    <div class="bar bar-header">
-      <button class="button button-clear button-positive header-buttons-logout" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
-      <button class="button button-clear button-positive header-buttons-student" ng-click="goAddStudent()">Add Student</button>
-    </div>
+  <ion-content class="padding">
+    <ion-header-bar class="bar bar-header">
+      <button class="button button-clear button-positive" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
+      <button class="button button-clear button-positive" ng-click="goAddStudent()">Add Student</button>
+    </ion-header-bar>
     <br><br><br>
-    <ion-list ng-repeat="student in students">
-      <a>
-        <span data={{student.studName}}> {{student.studName}}</span> :
-        <span data={{student.studCourse}}> {{student.studCourse}}</span>
-      </a>
-      <br><br>
-    </ion-list>
+    <section class="students" ng-repeat="student in students">
+      <div class="item item-icon-left item-text-right item-text-wrap">
+        <button class="button button-small button-assertive icon ion-close-circled icon-accessory" ng-click="delete()"></button>
+        <h3 data="{{student.studName}}, {{student.studCourse}}">{{student.studName}} | {{student.studCourse}}</h3>
+        <ion-checkbox class="item-checkbox-right checkbox-positive" id="{{student.studChecked}}" ng-model="student.studChecked">
+          Student In Class
+        </ion-checkbox>
+      </div>
+    </section>
+    <section class="roll-call-button">
+      <button class="button button-small button-positive" ng-click="takeRollCall()">Take Roll Call</button>
+    </section>
   </ion-content>
 </ion-view>

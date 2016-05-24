@@ -25,15 +25,18 @@
     "students" : {
       "-KGVfovARyTxu2G5DM84" : {
         "studName" : "Decy Hanley",
-        "studCourse" : "Creative Multimedia"
+        "studCourse" : "Creative Multimedia",
+        "studChecked" : true
       },
       "-KGVgwdTqbbQq0TI_tWX" : {
         "studName" : "Thomas Lonergan",
-        "studCourse" : "Creative Multimedia"
+        "studCourse" : "Creative Multimedia",
+        "studChecked" : true
       },
       "-KHylF1sQN5eLVECIcPg" : {
-        "studName" : "John Hannafin",
-        "studCourse" : "Digital Animation Production"
+        "studName" : "Emily Kearns",
+        "studCourse" : "Creative Multimedia",
+        "studChecked" : true
       }
     }
   }

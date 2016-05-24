@@ -1,19 +1,17 @@
 <ion-view view-title="Courses">
-  <ion-content>
+  <ion-content class="padding">
     <ion-header-bar class="bar bar-header">
-      <button class="button button-clear button-positive header-buttons-logout" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
-      <button class="button button-clear button-positive header-buttons-course" ng-click="goCreateCourse()">Create Course</button>
+      <button class="button button-clear button-positive" ng-controller="loginCtrl" ng-click="logout()">Logout </button>
+      <button class="button button-clear button-positive" ng-click="goCreateCourse()">Create Course</button>
     </ion-header-bar>
-    <br><br>
-    <ion-list>
-      <ion-item class="item-icon-right" ng-repeat="course in courses">
-        <div class="item-text-left item-text-wrap" ng-click="goStudents()">
-          <h2 data={{course.courseName}}> {{course.courseName}}</h2>
-          <h3 data={{course.courseDay}}> {{course.courseDay}}</h3>
-          <h4 data={{course.courseTime}}> {{course.courseTime}}</h4>
-          <i class="icon ion-chevron-right icon-accessory"></i>
-        </div>
-      </ion-item>
-    </ion-list>
+    <br><br><br>
+    <section class="courses" ng-repeat="course in courses">
+      <div class="item item-icon-left item-text-center item-icon-right item-text-wrap">
+        <button class="button button-small button-assertive icon ion-close-circled icon-accessory" ng-click="delete()"></button>
+        <h3 data="{{course.courseName}}">{{course.courseName}}</h3>
+        <h4 data="{{course.courseDay}}, {{course.courseTime}}">{{course.courseDay}} | {{course.courseTime}}</h4>
+        <button class="button button-small button-light icon ion-chevron-right icon-accessory" ng-click="goStudents()"></button>
+      </div>
+    </section>
   </ion-content>
 </ion-view>

@@ -1,28 +1,34 @@
 <ion-view view-title="Add Student">
-  <ion-content>
-    <div class="bar bar-header">
-      <button class="button button-clear button-positive header-buttons-addStudent" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
-    </div>
-    <section>
+  <ion-content class="padding">
+    <ion-header-bar class="bar bar-header">
+      <button class="button button-clear button-positive" ng-controller="loginCtrl" ng-click="logout()">Logout</button>
+    </ion-header-bar>
+    <br><br><br>
+    <section class="add-student-name">
       <label class="item item-input">
-        <span class="input-label">Student Name
+        <div class="input-label">Student Name</div>
+        <input type="text" id="studName">
       </label>
-      <input type="text" id="stuName">
     </section>
-    <section>
-      <label class="item item-input">
-        <span class="input-label">Class</span>
+    <section class="add-student-course">
+      <label class="item item-input item-select">
+        <div class="input-label">Student Course</div>
+        <select id="studCourse">
+          <option value="Creative Multimedia" selected>Creative Mutimedia</option>
+          <option value="Digital Animation Production">Digital Animation Production</option>
+          <option value="Game Art and Design">Game Art and Design</option>
+          <option value="Business Studies">Business Studies</option>
+        </select>
       </label>
-      <select id="stuClass">
-        <option value="Creative Mutimedia">Creative Mutimedia</option>
-        <option value="Game Art and Design">Game Art and Design</option>
-        <option value="Business">Business</option>
-      </select>
     </section>
-    <section>
-      <ion-list ng-repeat="item in items">
-        <div id="item">{{item.stuName}} : {{item.stuClass}}</div>
-      </ion-list>
+    <section class="add-student-check">
+      <label>
+        <ion-checkbox class="item-checkbox-right" id="studChecked">Student In Class</ion-checkbox>
+      </label>
     </section>
-</ion-content>
+    <br>
+    <section class="add-student-button">
+      <button class="button button-small button-positive" ng-click="addStudent()">Add Student</button>
+    </section>
+  </ion-content>
 </ion-view>

@@ -1,36 +1,71 @@
-html, body {
+.page-title {
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 10%;
+}
+.login {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 10%;
+}
+.sign-in-button {
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 5%;
+}
+.register-button {
   text-align: center;
   vertical-align: middle;
 }
-.header-buttons-logout {
-  left: 0.5%;
+.register {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 10%;
 }
-.header-buttons-course {
-  left: 91.5%;
+.courses {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 5%;
 }
-.header-buttons-student {
-  left: 92.5%;
+.create-course-name {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 5%;
 }
-.header-buttons-createCourse {
-  left: 48%;
+.create-course-day {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 5%;
 }
-.header-buttons-addStudent {
-  left: 48%;
+.create-course-time {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 5%;
 }
-@media (max-width: 768px) {
-  .header-buttons-logout {
-  left: 1%;
-  }
-  .header-buttons-course {
-    left: 68%;
-  }
-  .header-buttons-student {
-    left: 72%;
-  }
-  .header-buttons-createCourse {
-    left: 42.5%;
-  }
-  .header-buttons-addStudent {
-    left: 42.5%;
-  }
+.create-course-button {
+  text-align: center;
+  vertical-align: middle;
+}
+.students {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 5%;
+}
+.roll-call-button {
+  text-align: center;
+  vertical-align: middle;
+}
+.add-student-name {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 5%;
+}
+.add-student-course {
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 5%;
+}
+.add-student-button {
+  text-align: center;
+  vertical-align: middle;
 }
