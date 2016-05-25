@@ -61,16 +61,7 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     $state.go('tabs.courses');
   };
   $scope.delete = function() {
-    /*var courseName = document.getElementById("courseName");
-    var courseDay = document.getElementById("courseDay");
-    var courseTime = document.getElementById("courseTime");
-    $scope.courses.$remove({
-      "courseName": courseName,
-      "courseDay": courseDay,
-      "courseTime": courseTime
-    });
-    $state.go('tabs.courses');*/
-    alert("Delete button coming soon...\nCode implemented, but not working...\nMaybe a bug with Angular...");
+    alert("Delete button coming soon...\nCode implemented, but not working... (Placed in Snippets.txt)\nMaybe a bug with Angular...");
   };
   $scope.goCreateCourse = function() {
     $state.go('tabs.createCourse');
@@ -93,26 +84,12 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     $state.go('tabs.students');
   };
   $scope.delete = function() {
-    /*var studName = document.getElementById("studName");
-    var studCourse = document.getElementById("studCourse");
-    var studChecked = document.getElementById("studChecked");
-    $scope.students.$remove({
-      "studName": studName,
-      "studCourse": studCourse,
-      "studChecked": studChecked
-    });
-    $state.go('tabs.students');*/
-    alert("Delete button coming soon...\nCode implemented, but not working...\nMaybe a bug with Angular...");
+    alert("Delete button coming soon...\nCode implemented, but not working... (Placed in Snippets.txt)\nMaybe a bug with Angular...");
   };
   $scope.goAddStudent = function() {
     $state.go('tabs.addStudent');
   };
   $scope.takeRollCall = function() {
-    /*var studChecked = document.getElementById("studChecked");
-    $scope.students.$save({
-      "studChecked": studChecked
-      });
-      $state.go('tabs.courses');*/
-      alert("Take Roll Call button coming soon...\nCode, doesn't work...");
-    };
+    alert("Take Roll Call button coming soon...\nCode, doesn't work... (Placed in Snippets.txt)");
+  };
 })

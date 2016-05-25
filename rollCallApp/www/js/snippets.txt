@@ -1,0 +1,30 @@
+I've placed these snippets here as they were, making the app not function even commented out
+
+<----------Course Delete Button Code...---------->
+  var courseName = document.getElementById("courseName");
+  var courseDay = document.getElementById("courseDay");
+  var courseTime = document.getElementById("courseTime");
+  $scope.courses.$remove({
+    "courseName": courseName,
+    "courseDay": courseDay,
+    "courseTime": courseTime
+  });
+  $state.go('tabs.courses');
+
+<----------Student Delete Button Code...---------->
+  var studName = document.getElementById("studName");
+  var studCourse = document.getElementById("studCourse");
+  var studChecked = document.getElementById("studChecked");
+  $scope.students.$remove({
+    "studName": studName,
+    "studCourse": studCourse,
+    "studChecked": studChecked
+  });
+  $state.go('tabs.students');
+
+<----------Take Roll Call Button Code...---------->
+  var studChecked = document.getElementById("studChecked");
+  $scope.students.$save({
+    "studChecked": studChecked
+  });
+  $state.go('tabs.courses');
