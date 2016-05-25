@@ -1,39 +1,42 @@
 {
   "items" : {
     "courses" : {
-      "-KGVhVdWooftIoaMQ4-2" : {
-        "courseName" : "Creative Mutimedia",
-        "day" : "Monday",
+      "-KI_pOp7EEH71MHGtLFP" : {
+        "courseDay" : "Monday",
+        "courseName" : "Creative Multimedia",
         "courseTime" : "12:00"
       },
-      "-KGVhxczss2EHC9vX5Ph" : {
+      "-KI_pXI36snxfnz8irMv" : {
+        "courseDay" : "Tuesday",
         "courseName" : "Digital Animation Production",
-        "day" : "Tuesday",
         "courseTime" : "13:00"
       },
-      "-KGVi4F_qRP7EvMqfYxb" : {
+      "-KI_pii4HXg18orzVl3I" : {
+        "courseDay" : "Wednesday",
         "courseName" : "Game Art and Design",
-        "day" : "Wednesday",
         "courseTime" : "14:00"
       },
-      "-KHyl6gp_hmdEMuZd3dk" : {
+      "-KI_ppZTSSJ_d4RkdnwF" : {
+        "courseDay" : "Thursday",
         "courseName" : "Business Studies",
-        "day" : "Thursday",
         "courseTime" : "15:00"
       }
     },
     "students" : {
-      "-KGVfovARyTxu2G5DM84" : {
-        "stuCourse" : "Creative Mutimedia",
-        "stuName" : "Thomas Lonergan"
+      "-KI_pzqtEJWOFXE9kdjn" : {
+        "studChecked" : false,
+        "studCourse" : "Creative Multimedia",
+        "studName" : "Decy Hanley"
       },
-      "-KGVgwdTqbbQq0TI_tWX" : {
-        "stuCourse" : "Creative Mutimedia",
-        "stuName" : "Emily Kearns"
+      "-KI_q7QzTIn6QIO5ZibU" : {
+        "studChecked" : false,
+        "studCourse" : "Creative Multimedia",
+        "studName" : "Thomas Lonergan"
       },
-      "-KHylF1sQN5eLVECIcPg" : {
-        "stuCourse" : "Game Art and Design",
-        "stuName" : "John Hannafin"
+      "-KI_qCuXABesLnEB2LOA" : {
+        "studChecked" : false,
+        "studCourse" : "Creative Multimedia",
+        "studName" : "Emily Kearns"
       }
     }
   }
