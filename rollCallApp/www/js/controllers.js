@@ -61,7 +61,7 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
     $state.go('tabs.courses');
   };
   $scope.delete = function() {
-    var courseName = document.getElementById("courseName");
+    /*var courseName = document.getElementById("courseName");
     var courseDay = document.getElementById("courseDay");
     var courseTime = document.getElementById("courseTime");
     $scope.courses.$remove({
@@ -69,8 +69,8 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
       "courseDay": courseDay,
       "courseTime": courseTime
     });
-    $state.go('tabs.courses');
-    /*alert("Delete feature coming soon...\nCode implemented, but not working...\nMaybe a bug with Angular...");*/
+    $state.go('tabs.courses');*/
+    alert("Delete button coming soon...\nCode implemented, but not working...\nMaybe a bug with Angular...");
   };
   $scope.goCreateCourse = function() {
     $state.go('tabs.createCourse');
@@ -102,7 +102,7 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
       "studChecked": studChecked
     });
     $state.go('tabs.students');*/
-    alert("Delete feature coming soon...\nCode implemented, but not working...\nMaybe a bug with Angular...");
+    alert("Delete button coming soon...\nCode implemented, but not working...\nMaybe a bug with Angular...");
   };
   $scope.goAddStudent = function() {
     $state.go('tabs.addStudent');
@@ -113,6 +113,6 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
       "studChecked": studChecked
       });
       $state.go('tabs.courses');*/
-      alert("Take Roll Call feature coming soon...\nCode, doesn't work...");
+      alert("Take Roll Call button coming soon...\nCode, doesn't work...");
     };
 })
