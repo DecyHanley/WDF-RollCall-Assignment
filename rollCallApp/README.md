@@ -7,6 +7,7 @@
   * To access the data you will need to login, via my google account:
     * email: decy.hanley@gmail.com
     * password: Apple@Tipp1234
+  * You can also read the data via a json file located in the json folder in the js folder
 
 ## Running the app
 
