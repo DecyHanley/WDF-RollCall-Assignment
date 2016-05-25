@@ -13,7 +13,7 @@
 
 * This app was built using the Ionic Framework.
   * Please follow the online guide for installing @ http://ionicframework.com/getting-started/
-  * Once everything has been installed, open the command propmt, Then __*cd*__ in to the folder that the app is localted at, 
+  * Once everything has been installed, open the command prompt, Then __*cd*__ in to the folder that the app is localted at, 
     and the use the command __*ionic serve*__ (you can add __*--lab*__ here to view the app in bothe iOS and Android form factors).
   * This command will open up you browser and load the localhost on port 8100, and this will give you access to test out and use the app.
 
