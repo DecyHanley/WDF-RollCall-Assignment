@@ -13,6 +13,7 @@ angular.module('rollcallapp', ['ionic', 'rollcallapp.controllers', 'rollcallapp.
 })
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
   $ionicConfigProvider.tabs.position('bottom');
+  $ionicConfigProvider.form.checkbox("circle");
   $stateProvider
   // setup an abstract state for the tabs directive
   .state('tabs', {
@@ -53,7 +54,7 @@ angular.module('rollcallapp', ['ionic', 'rollcallapp.controllers', 'rollcallapp.
     views: {
       'tab-login': {
         templateUrl: 'templates/tab-createCourse.html',
-        controler: 'courseCtrl'
+        controller: 'coursesCtrl'
       }
     }
   })
@@ -71,7 +72,7 @@ angular.module('rollcallapp', ['ionic', 'rollcallapp.controllers', 'rollcallapp.
     views: {
       'tab-login': {
         templateUrl: 'templates/tab-addStudent.html',
-        controler: 'studentsCtrl'
+        controller: 'studentsCtrl'
       }
     }
   })

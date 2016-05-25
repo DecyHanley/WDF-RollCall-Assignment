@@ -49,18 +49,28 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
 })
 .controller("coursesCtrl", function($scope, $state, Courses) {
   $scope.courses = Courses;
-  $scope.createCourse = function() {
+  $scope.addItem = function() {
     var courseName = document.getElementById("courseName").value;
     var courseDay = document.getElementById("courseDay").value;
     var courseTime = document.getElementById("courseTime").value;
-    if (courseName) {
-      $scope.courses.$add({
-        "courseName": courseName,
-        "courseDay": couresDay,
-        "courseTime": courseTime
-      });
-    }
+    $scope.courses.$add({
+      "courseName": courseName,
+      "courseDay": courseDay,
+      "courseTime": courseTime
+    });
     $state.go('tabs.courses');
+  };
+  $scope.delete = function() {
+    var courseName = document.getElementById("courseName");
+    var courseDay = document.getElementById("courseDay");
+    var courseTime = document.getElementById("courseTime");
+    $scope.courses.$remove({
+      "courseName": courseName,
+      "courseDay": courseDay,
+      "courseTime": courseTime
+    });
+    $state.go('tabs.courses');
+    /*alert("Delete feature coming soon...\nCode implemented, but not working...\nMaybe a bug with Angular...");*/
   };
   $scope.goCreateCourse = function() {
     $state.go('tabs.createCourse');
@@ -71,20 +81,38 @@ angular.module('rollcallapp.controllers', ["ionic", "firebase"])
 })
 .controller("studentsCtrl", function($scope, $state, Students) {
   $scope.students = Students;
-  $scope.addStudent = function() {
+  $scope.addItem = function() {
     var studName = document.getElementById("studName").value;
     var studCourse = document.getElementById("studCourse").value;
-    var studChecked = document.getElementById("studChecked").value;
-    if (studName) {
-      $scope.students.$add({
-        "studName": studName,
-        "studCourse": studCourse,
-        "studChecked": studChecked
-      });
-    }
+    var studChecked = document.getElementById("studChecked").checked=true;
+    $scope.students.$add({
+      "studName": studName,
+      "studCourse": studCourse,
+      "studChecked": studChecked
+    });
     $state.go('tabs.students');
+  };
+  $scope.delete = function() {
+    /*var studName = document.getElementById("studName");
+    var studCourse = document.getElementById("studCourse");
+    var studChecked = document.getElementById("studChecked");
+    $scope.students.$remove({
+      "studName": studName,
+      "studCourse": studCourse,
+      "studChecked": studChecked
+    });
+    $state.go('tabs.students');*/
+    alert("Delete feature coming soon...\nCode implemented, but not working...\nMaybe a bug with Angular...");
   };
   $scope.goAddStudent = function() {
     $state.go('tabs.addStudent');
   };
+  $scope.takeRollCall = function() {
+    /*var studChecked = document.getElementById("studChecked");
+    $scope.students.$save({
+      "studChecked": studChecked
+      });
+      $state.go('tabs.courses');*/
+      alert("Take Roll Call feature coming soon...\nCode, doesn't work...");
+    };
 })

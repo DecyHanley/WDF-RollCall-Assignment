@@ -6,16 +6,18 @@
     </ion-header-bar>
     <br><br><br>
     <section class="students" ng-repeat="student in students">
-      <div class="item item-icon-left item-text-right item-text-wrap">
-        <button class="button button-small button-assertive icon ion-close-circled icon-accessory" ng-click="delete()"></button>
-        <h3 data="{{student.studName}}, {{student.studCourse}}">{{student.studName}} | {{student.studCourse}}</h3>
-        <ion-checkbox class="item-checkbox-right checkbox-positive" id="{{student.studChecked}}" ng-model="student.studChecked">
-          Student In Class
-        </ion-checkbox>
+    <div class="item item-icon-left">
+      <button class="button button-small button-assertive icon ion-close-circled icon-accessory" ng-click="delete()"></button>
+      <h2 id="studName" data="{{student.studName}}">{{student.studName}}</h2>
+      <p id="studName" data="{{student.studName}}">{{student.studCourse}}</p>
+      <div class="checkbox checkbox-positive">
+        <input id="studChecked" type="checkbox" ng-model="student.studChecked" ng-checked="student.studChecked">
       </div>
-    </section>
+    </div>
+  </section>
+  </section>
     <section class="roll-call-button">
-      <button class="button button-small button-positive" ng-click="takeRollCall()">Take Roll Call</button>
+      <button class="button button-small button-royal" ng-click="takeRollCall()">Take Roll Call</button>
     </section>
   </ion-content>
 </ion-view>

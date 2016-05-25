@@ -23,9 +23,12 @@
   padding-bottom: 10%;
 }
 .courses {
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
   padding-bottom: 5%;
+}
+.course-info {
+  display: inline-flex;
 }
 .create-course-name {
   text-align: left;
@@ -50,6 +53,9 @@
   text-align: left;
   vertical-align: middle;
   padding-bottom: 5%;
+}
+.checkbox {
+  float: right;
 }
 .roll-call-button {
   text-align: center;

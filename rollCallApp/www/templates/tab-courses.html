@@ -6,11 +6,15 @@
     </ion-header-bar>
     <br><br><br>
     <section class="courses" ng-repeat="course in courses">
-      <div class="item item-icon-left item-text-center item-icon-right item-text-wrap">
+      <div class="item item-icon-left item-text-center item-icon-right">
         <button class="button button-small button-assertive icon ion-close-circled icon-accessory" ng-click="delete()"></button>
-        <h3 data="{{course.courseName}}">{{course.courseName}}</h3>
-        <h4 data="{{course.courseDay}}, {{course.courseTime}}">{{course.courseDay}} | {{course.courseTime}}</h4>
-        <button class="button button-small button-light icon ion-chevron-right icon-accessory" ng-click="goStudents()"></button>
+        <h2 id="courseName" ng-data="{{course.courseName}}">{{course.courseName}}</h2>
+        <div class="course-info">
+          <p id="courseDay" ng-data="{{course.courseDay}}">{{course.courseDay}}</p>
+          &nbsp;|&nbsp;
+          <p id="courseTime" ng-data={{course.courseTime}}>{{course.courseTime}}</p>
+        </div>
+        <button class="button button-small button-royal icon ion-chevron-right icon-accessory" ng-click="goStudents()"></button>
       </div>
     </section>
   </ion-content>
