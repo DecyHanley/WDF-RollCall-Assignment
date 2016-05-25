@@ -13,5 +13,5 @@
 * This app was built using the Ionic Framework.
   * Please follow the online guide for installing @ http://ionicframework.com/getting-started/
   * Once everything has been installed, open the command propmt,
-  * Then "_*cd*_" in to the folder that the app is localted at, 
+  * Then "__*cd*__" in to the folder that the app is localted at, 
     and the use the command *ionic serve* (you can add *--lab* here to view the app in bothe iOS and Android form factors).
